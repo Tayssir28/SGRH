@@ -1,24 +1,37 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { HomeComponent } from './home/home.component';
-import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCommonModule } from '@angular/material/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    NavbarComponent
-  ],
+      AppComponent,
+      HomeComponent,
+      NavbarComponent,
+      SidebarComponent
+    ],
   imports: [
-    CommonModule,
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ]
-})
-export class AppRoutingModule { }
+    BrowserAnimationsModule,
+    FormsModule,
+    MatIconModule,
+    MatCommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+}) 
+export class AppModule { }

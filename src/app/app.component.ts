@@ -3,6 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { MatCommonModule } from '@angular/material/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @Component({
   selector: 'app-root',
@@ -21,7 +28,15 @@ import { FormsModule } from '@angular/forms';
     imports: [CommonModule, 
       HomeComponent,
       NavbarComponent,
-      FormsModule]
+      SidebarComponent,
+      FormsModule,
+      MatCommonModule,
+      MatIcon,
+      MatIconModule,
+      MatSidenavModule,
+      MatToolbarModule,
+      MatButtonModule,
+    ]
   })
 export class AppComponent {
   title = 'SGRH';
