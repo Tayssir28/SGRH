@@ -31,7 +31,7 @@
     color: #CFD8DC;
     text-decoration: none;
     font-size: 17px;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
     text-align: center  ;
     
   }
@@ -39,9 +39,10 @@
   #sidebar .nav a:hover {
     color: #ECEFF1;
     background-color: #455A64;
+    width: 300px;
+    margin-left:-40px;
   }
   
   #sidebar .nav a i {
     margin: 25px 25px;
-
   }

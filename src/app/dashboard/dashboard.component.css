@@ -1,0 +1,26 @@
+.custom-container {
+    margin-left: 450px; /* Moves the container to the right */
+    margin-right:10px; /* Ensures no additional margin on the right */
+    max-width: 1300px; 
+    padding: 40px;
+    padding-left:50px;
+  }
+   
+
+.card-body.border.border-warning {
+  border: 2px solid orange;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effectB:hover {
+  background-color: rgba(255, 229, 81, 0.626);
+  transform: scale(1.05);
+}
+.hover-effectA:hover {
+  background-color: rgba(251, 88, 88, 0.648);
+  transform: scale(1.05);
+}
+.hover-effectC:hover {
+  background-color: rgba(117, 104, 253, 0.642);
+  transform: scale(1.05);
+}
