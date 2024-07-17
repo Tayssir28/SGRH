@@ -3,7 +3,7 @@ import { ButtonModule } from 'primeng/button';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { AjoutempComponent } from '../../ajoutemp/ajoutemp.component';
 import { AppComponent } from '../../app.component';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule, RouterOutlet } from '@angular/router';
 
 
 declare const $: any; // If you need jQuery, keep this line
@@ -12,21 +12,24 @@ declare interface routes {
    
 }
 
-  const routes: Routes = [
-    { path: 'dashboard',  component: DashboardComponent },
-    { path: 'ajoutemp', component: AjoutempComponent }, // Define your route
-    // Add more routes as needed
-  ];
+  // const routes: Routes = [
+  //   { path: 'dashboard',  component: DashboardComponent },
+  //   { path: 'ajoutemp', component: AjoutempComponent }, // Define your route
+  //   // Add more routes as needed
+  // ];
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [ButtonModule,
-    AppComponent,
+  imports: [ButtonModule, RouterOutlet
   ],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'], 
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  // imports: [
+  //   { path: 'ajoutemp', component: AjoutempComponent },
+  //   { path: 'dashborad', component: AjoutempComponent }
+  // ]
 })
 export class SidebarComponent implements OnInit {
 
@@ -38,7 +41,7 @@ export class SidebarComponent implements OnInit {
  
 
   ngOnInit() {
-    this.menuItems = routes.filter(menuItem => menuItem);
+    // this.menuItems = routes.filter(menuItem => menuItem);
   }
   sidebarVisible: boolean = true;
 }

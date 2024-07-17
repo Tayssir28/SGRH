@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCommonModule } from '@angular/material/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -22,9 +22,10 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AjoutempComponent } from './ajoutemp/ajoutemp.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/ajoutemp', pathMatch: 'full', component: AjoutempComponent },
+  // { path: '', redirectTo: '/ajoutemp', pathMatch: 'full', component: AjoutempComponent },
   { path: 'ajoutemp', component: AjoutempComponent }
 ];
 
@@ -52,10 +53,11 @@ const routes: Routes = [
     SidebarModule,
     ButtonModule,
     Component,
-    routes,
     RouterModule, 
+    FormsModule,
+    ReactiveFormsModule,
+    NgApexchartsModule,
     RouterModule.forRoot(routes)
-    
   ],
 
   exports: [

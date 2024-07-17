@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { AjoutempComponent } from "./ajoutemp/ajoutemp.component";
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -29,7 +30,9 @@ import { AjoutempComponent } from "./ajoutemp/ajoutemp.component";
   `,
    styleUrls: ['./app.component.css'],
 
-    imports: [CommonModule,
+    imports: [
+      RouterOutlet,RouterModule,
+      CommonModule,
     HomeComponent,
     NavbarComponent,
     SidebarComponent,
