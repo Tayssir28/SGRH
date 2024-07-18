@@ -4,16 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatCommonModule } from '@angular/material/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { FooterComponent } from "./components/footer/footer.component";
-import { AjoutempComponent } from "./ajoutemp/ajoutemp.component";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AjoutempComponent } from './ajoutemp/ajoutemp.component';
 import { RouterModule, RouterOutlet } from '@angular/router';
-
 
 @Component({
   selector: 'app-root',
@@ -21,18 +20,18 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   template: `
     <main>
-      <header class="brand-name">
-      </header>
+      <header class="brand-name"></header>
       <section class="content">
         <app-home></app-home>
       </section>
     </main>
   `,
-   styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css'],
 
-    imports: [
-      RouterOutlet,RouterModule,
-      CommonModule,
+  imports: [
+    RouterOutlet,
+    RouterModule,
+    CommonModule,
     HomeComponent,
     NavbarComponent,
     SidebarComponent,
@@ -42,13 +41,13 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule, DashboardComponent, FooterComponent, AjoutempComponent],
-    
-  })
+    MatButtonModule,
+    DashboardComponent,
+    FooterComponent,
+    AjoutempComponent,
+  ],
+})
 export class AppComponent {
   title = 'SGRH';
-  sidebarVisible:boolean =true;
-
-  
+  sidebarVisible: boolean = true;
 }
-
