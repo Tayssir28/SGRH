@@ -5,15 +5,14 @@
 form {
     background-color: #d5e3f1e3;
     padding-inline: 40px;
-    padding-block:40px;
-    margin-block: 40px;
+    padding-block:20px;
+    margin-block: 10px;
     margin-left:350px ;
     margin-right: 80px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Form control styles */
   .form-control {
     border: 1px solid #ced4da;
     border-radius: 4px;
@@ -32,13 +31,11 @@ form {
     border-radius: 4px 0 0 4px;
   }
   
-  /* Feedback messages */
   .valid-feedback, .invalid-feedback {
     font-size: 12px;
     margin-top: 5px;
   }
   
-  /* Button styles */
   .btn-primary {
     background-color: #0158b5;
     border: none;
@@ -53,7 +50,6 @@ form {
     background-color:#024287;
   }
   
-  /* Checkbox styles */
   .form-check-input {
     width: 16px;
     height: 16px;
@@ -64,7 +60,6 @@ form {
     margin-left: 5px;
   }
   
-  /* Responsive design */
   @media (max-width: 576px) {
     .form-control, .btn-primary {
       width: 100%;

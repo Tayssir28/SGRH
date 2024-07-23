@@ -1,4 +1,4 @@
-<p-sidebar [(visible)]="sidebarVisible">
+<p-sidebar>
   <div id="viewport">
     <!-- Sidebar -->
     <div id="sidebar">
@@ -26,17 +26,24 @@
           </div>
         </li>
 
-
         <li>
           <a href="#">
             <i class="zmdi zmdi-link"></i> Salaires
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="zmdi zmdi-widgets"></i> Congés
-          </a>
+          <button class="btn" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            <a><i class="zmdi zmdi-google"></i>Congé</a>
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav zmdi zmdi-view-dashboard ">
+              <li><a routerLinkActive="active" routerLink="/demandeconge"
+                  class="link-body-emphasis text-decoration-none">Demande congé</a></li>
+              <li><a href="#" class="link-body-emphasis text-decoration-none">Liste</a></li>
+            </ul>
+          </div>
         </li>
+
         <li>
           <a href="#">
             <i class="zmdi zmdi-info-outline"></i> Demandes
