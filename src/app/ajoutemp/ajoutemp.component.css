@@ -1,0 +1,77 @@
+/* General styles */
+#ajoutemp {
+    background-color: #0158b5;
+}
+form {
+    background-color: #d5e3f1e3;
+    padding: 20px;
+    margin-block: 80px;
+    margin-left:340px ;
+    margin-right: 70px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form control styles */
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-group-text {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /* Feedback messages */
+  .valid-feedback, .invalid-feedback {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #0158b5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 920px;
+  }
+  
+  .btn-primary:hover {
+    background-color:#024287;
+  }
+  
+  /* Checkbox styles */
+  .form-check-input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .form-check-label {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 576px) {
+    .form-control, .btn-primary {
+      width: 100%;
+    }
+    
+    .form-check {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
